@@ -1,3 +1,73 @@
 /* Your styles go here */
 @import url("bootstrap/dist/css/bootstrap.min.css");
 @import url("bootstrap-icons/font/bootstrap-icons.css");
+
+:root{
+    box-sizing: border-box;
+}
+*, ::after, ::before{
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+}
+nav>ul>li{
+    display: inline-block;
+
+
+}
+li{
+    color: white;
+
+}
+
+nav{
+    background-color: black;
+    padding-bottom: 6px;
+    padding-top: 1rem;
+
+}
+
+.gallery{
+    color: skyblue;
+    margin-left: 3rem;
+}
+
+a{
+    text-decoration: none;
+    color: skyblue;
+}
+.body{
+    display: flex;
+    margin: 2rem;
+}
+
+.left{
+    width: 100%;
+}
+.right{
+    width: 100%;
+}
+
+@media all and (max-width: 800px){
+    h1{
+        font-size: 3.5rem;
+    }
+    .gallery{
+        font-size: 2rem;
+        margin-left: 100%;
+    }
+    .body{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .secondrow, .thirdrow, .fourthrow{
+        display: none;
+    }
+    .firstrow{
+        margin-top: 1rem;
+        width: 100%;
+    }
+    
+}
+    
